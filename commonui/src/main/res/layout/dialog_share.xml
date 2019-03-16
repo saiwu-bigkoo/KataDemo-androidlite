@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_share_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvShareWechat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_sharedialog_wechat"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:tag="0"
+            android:text="@string/wechat"
+            android:textColor="@color/dailog_color_itemtext"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvShareWechatMoments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_sharedialog_wechatmoments"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:tag="1"
+            android:text="@string/wechatmoments"
+            android:textColor="@color/dailog_color_itemtext"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvShareQQ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_sharedialog_qq"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:tag="2"
+            android:text="@string/qqfriend"
+            android:textColor="@color/dailog_color_itemtext"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvShareSinaWeibo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_sharedialog_sinaweibo"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:tag="3"
+            android:text="@string/sinaweibo"
+            android:textColor="@color/dailog_color_itemtext"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/vMoreDivider"
+        layout="@layout/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/loMore"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvShareCollect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_sharedialog_collect"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:tag="4"
+            android:text="@string/collect"
+            android:textColor="@color/dailog_color_itemtext"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvShareReport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_sharedialog_report"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:tag="5"
+            android:text="@string/report"
+            android:textColor="@color/dailog_color_itemtext"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvShareCopyLink"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_sharedialog_copylink"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:tag="6"
+            android:text="@string/copylink"
+            android:textColor="@color/dailog_color_itemtext"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:tag="7"
+            android:textColor="@color/dailog_color_itemtext"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:tag="-1"
+        android:text="@string/sharedialog_cancel"
+        android:textColor="@color/dailog_color_canceltext"
+        android:textSize="15sp" />
+
+</LinearLayout>

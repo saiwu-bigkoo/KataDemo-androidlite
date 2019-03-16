@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/keyboard_background"
+    android:orientation="vertical">
+
+    <!--  备注和数值  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_divider"
+            android:background="@color/app_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fitsSystemWindows="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/billadd_remark"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etContext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="@string/billadd_remark_hint"
+                android:inputType="text"
+                android:lines="1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="0"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_divider"
+            android:background="@color/app_divider" />
+    </LinearLayout>
+
+    <!--  按键区域  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/keyboard_divider"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/key1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginBottom="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/key4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginBottom="@dimen/keyboard_divider"
+                android:layout_marginTop="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/key7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginBottom="@dimen/keyboard_divider"
+                android:layout_marginTop="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/keyFn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginTop="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="今天" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/keyboard_divider"
+            android:layout_marginRight="@dimen/keyboard_divider"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/key2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginBottom="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/key5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginBottom="@dimen/keyboard_divider"
+                android:layout_marginTop="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/key8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginBottom="@dimen/keyboard_divider"
+                android:layout_marginTop="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/key0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginTop="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/keyboard_divider"
+            android:layout_marginRight="@dimen/keyboard_divider"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/key3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginBottom="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/key6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginBottom="@dimen/keyboard_divider"
+                android:layout_marginTop="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/key9"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginBottom="@dimen/keyboard_divider"
+                android:layout_marginTop="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/keyDot"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginTop="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/keyboard_divider"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/keyDel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginBottom="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_key_del" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/keyPlus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyboard_key_height"
+                android:layout_marginBottom="@dimen/keyboard_divider"
+                android:layout_marginTop="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/keyEnter"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_marginTop="@dimen/keyboard_divider"
+                android:background="@drawable/selector_keyboard"
+                android:gravity="center"
+                android:text="完成" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--  排序列表  -->
+    <LinearLayout
+        android:id="@+id/loContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_item_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivCategoryIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:background="@mipmap/bg_category_normal"/>
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_list_item_marginleft"
+                android:layout_weight="1"
+                android:textSize="@dimen/app_list_item_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+
+                android:src="@mipmap/ic_sort" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_divider"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/app_list_padding_left"
+            android:background="@color/app_divider" />
+    </LinearLayout>
+
+</FrameLayout>

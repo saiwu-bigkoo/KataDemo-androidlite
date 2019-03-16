@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <com.bigkoo.commonui.topbar.TopBarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_topbar_height"
+        app:titleBackground="@color/app_frontground"
+        app:colorMode="Dark"
+        app:showDivider="false"
+        app:titleText="@string/settings_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/app_frontground"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@mipmap/ic_launcher_about" />
+    </LinearLayout>
+
+    <!--  列表项  -->
+    <LinearLayout
+        android:id="@+id/loCategotyManage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onItemClick"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/app_list_padding_left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_item_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_settings_category" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_list_item_marginleft"
+                android:layout_weight="1"
+                android:text="@string/settings_categorymanage"
+                android:textSize="@dimen/app_list_item_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_right"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_divider"
+            android:background="@color/app_divider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onItemClick"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/app_list_padding_left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_item_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_settings_share" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_list_item_marginleft"
+                android:layout_weight="1"
+                android:text="@string/settings_share"
+                android:textSize="@dimen/app_list_item_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_right"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_divider"
+            android:background="@color/app_divider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onItemClick"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/app_list_padding_left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_item_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_settings_feedback" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_list_item_marginleft"
+                android:layout_weight="1"
+                android:text="@string/settings_feedback"
+                android:textSize="@dimen/app_list_item_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_right"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_divider"
+            android:background="@color/app_divider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onItemClick"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/app_list_padding_left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_item_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_settings_permission" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_list_item_marginleft"
+                android:layout_weight="1"
+                android:text="@string/settings_permission"
+                android:textSize="@dimen/app_list_item_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_right"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_divider"
+            android:background="@color/app_divider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onItemClick"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/app_list_padding_left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_item_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_settings_about" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_list_item_marginleft"
+                android:layout_weight="1"
+                android:text="@string/settings_about"
+                android:textSize="@dimen/app_list_item_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_right"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_divider"
+            android:background="@color/app_divider" />
+    </LinearLayout>
+</LinearLayout>

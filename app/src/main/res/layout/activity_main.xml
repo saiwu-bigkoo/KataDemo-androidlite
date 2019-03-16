@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:fitsSystemWindows="@bool/out_fits_system_windows">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <!--  列表  -->
+            <include layout="@layout/item_main_header" />
+
+            <com.bigkoo.commonui.topbar.TopBarView
+                android:id="@+id/tbTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_topbar_height"
+                app:colorMode="Dark"
+                app:layout_collapseMode="pin"
+                app:showDivider="false"
+                app:titleBackground="@color/app_frontground"
+                app:titleText="@string/app_name" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!--  添加按钮  -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="onAddRecord"
+        android:src="@mipmap/ic_bill_add"
+        app:backgroundTint="@color/app_frontground"
+        app:borderWidth="0dip"
+        app:layout_anchor="@id/recyclerView"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bigkoo.billlite">
+
+    <application
+        android:name=".BillApplicantion"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.BillAddActivity" /> <!-- 添加账单   -->
+        <activity android:name=".activity.ChartsActivity" /><!-- 统计页面   -->
+        <activity android:name=".activity.BillDetailActivity" /> <!-- 账单详情页面  -->
+        <activity android:name=".activity.CategoryManageActivity" />   <!-- 分类管理   -->
+        <activity android:name=".activity.AboutActivity" /> <!--  关于我们  -->
+        <activity android:name=".activity.SettingsActivity" /><!--  设置页面    -->
+        <activity android:name=".activity.FeedbackActivity" /><!-- 建议反馈页面 -->
+        <activity android:name=".activity.CategoryAddActivity" /><!--  添加分类 -->
+    </application>
+
+</manifest>

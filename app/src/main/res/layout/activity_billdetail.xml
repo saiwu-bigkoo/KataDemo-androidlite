@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <com.bigkoo.commonui.topbar.TopBarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_topbar_height"
+        app:titleBackground="@color/app_frontground"
+        app:colorMode="Dark"
+        app:showDivider="false"
+        app:titleText="@string/billdetail_detail" />
+
+    <!--  分类区域  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_frontground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivCategory"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--  列表项  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--  列表项内容  -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_list_item_height">
+
+                <TextView
+                    android:id="@+id/item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    android:text="@string/billdetail_type"
+                    android:textSize="@dimen/app_list_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tvBillType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/item1"
+                    android:paddingLeft="@dimen/app_list_item_marginleft"
+                    android:textSize="@dimen/app_list_item_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_list_divider"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/app_list_marginleft"
+                    android:background="@color/app_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_list_item_height">
+
+                <TextView
+                    android:id="@+id/item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    android:text="@string/billdetail_money"
+                    android:textSize="@dimen/app_list_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tvMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/item2"
+                    android:paddingLeft="@dimen/app_list_item_marginleft"
+                    android:textSize="@dimen/app_list_item_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_list_divider"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/app_list_marginleft"
+                    android:background="@color/app_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_list_item_height">
+
+                <TextView
+                    android:id="@+id/item3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    android:text="@string/billdetail_date"
+                    android:textSize="@dimen/app_list_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/item3"
+                    android:paddingLeft="@dimen/app_list_item_marginleft"
+                    android:textSize="@dimen/app_list_item_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_list_divider"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/app_list_marginleft"
+                    android:background="@color/app_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_list_item_height">
+
+                <TextView
+                    android:id="@+id/item5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    android:text="@string/billdetail_remark"
+                    android:textSize="@dimen/app_list_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tvRemark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/item5"
+                    android:paddingLeft="@dimen/app_list_item_marginleft"
+                    android:textSize="@dimen/app_list_item_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_list_divider"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/app_list_marginleft"
+                    android:background="@color/app_divider" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--  底部菜单  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_button_border"
+                android:background="@color/app_button_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_background"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/billdetail_edit" />
+
+                <View
+                    android:layout_width="@dimen/app_button_border"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/app_button_border" />
+
+                <TextView
+                    android:id="@+id/tvDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/billdetail_delete" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

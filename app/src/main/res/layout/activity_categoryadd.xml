@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.bigkoo.commonui.topbar.TopBarView
+        android:id="@+id/topBarView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_topbar_height"
+        app:colorMode="Dark"
+        app:showDivider="false"
+        app:titleBackground="@color/app_frontground"
+        app:titleText="@string/categoryadd_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/bg_category_focus"
+            android:src="@mipmap/ic_category_define" />
+
+        <com.bigkoo.commonui.edittext.EditTextWithDelView
+            android:id="@+id/etCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/categoryadd_hint"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="4"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_list_divider"
+        android:background="@color/app_divider" />
+
+    <LinearLayout
+        android:id="@+id/deleteCategoriesView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/categoryadd_delete" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_divider"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/app_divider" />
+
+        <androidx.appcompat.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

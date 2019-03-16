@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#1B7CCC</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 首页底部 -->
+    <color name="main_navigationbar_bg">@android:color/white</color> <!-- 底部导航背景 -->
+    <color name="main_navigationbar_text_normal">#999999</color>  <!-- 底部导航文字常规 -->
+    <color name="main_navigationbar_text_focus">#232426</color>  <!-- 底部导航文字聚焦 -->
+    <color name="main_navigationbar_divider">#808080</color>  <!-- 底部导航分割线 -->
+
+    <color name="app_frontground">#1B7CCC</color> <!---  App前景色  -->
+    <!--<color name="app_frontground">#D23033</color> -->
+    <color name="app_background">#FFFFFF</color>    <!--    App背景色  -->
+    <color name="app_divider">#F5F5F5</color>   <!--  列表分割线  -->
+    <color name="app_button_border">#F5F5F5</color> <!--  按钮边框颜色  -->
+    <color name="app_text_normal">#999999</color>
+    <color name="app_text_focus">#232426</color>
+
+    <color name="keyboard_pressed">#22E0E0E0</color>    <!-- 按键按下时颜色   -->
+    <color name="keyboard_normal">#FFFFFF</color>   <!-- 按键正常颜色  -->
+    <color name="keyboard_background">#F5F5F5</color>   <!-- 键盘背景  -->
+
+    <color name="textColor_alert_button_destructive">#1B7CCC</color>
+    <!--普通按钮文字颜色-->
+    <color name="textColor_alert_button_others">#8f8f8f</color>
+
+</resources>

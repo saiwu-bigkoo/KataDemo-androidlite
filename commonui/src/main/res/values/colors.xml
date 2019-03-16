@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FFD100</color>
+
+    <color name="topbar_color_title_dark">#ffffff</color>
+    <color name="topbar_color_title_light">#000000</color>
+    <color name="topbar_color_righttext_dark">#ffffff</color>
+    <color name="topbar_color_righttext_light">#000000</color>
+    <color name="topbar_color_divider">#18999999</color>
+    <color name="topbar_color_titleBackground">#00ffffff</color>
+    <color name="color_divider">#18999999</color>
+    <color name="dailog_color_canceltext">#1A1A1A</color>
+    <color name="dailog_color_itemtext">#333333</color>
+    <color name="dailog_color_halfbg">#77000000</color>
+
+</resources>

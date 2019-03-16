@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_navigationbar_record_size">50dp</dimen> <!--  导航栏记录按钮尺寸  -->
+    <dimen name="app_list_divider">1dp</dimen>    <!--  列表分割线高度   -->
+    <dimen name="app_list_marginleft">20dp</dimen>  <!--  列表左边距  -->
+    <dimen name="app_list_item_height">60dp</dimen> <!--  列表内容项高度  -->
+    <dimen name="app_list_item_marginleft">10dp</dimen>  <!--  列表内容项左边距  -->
+    <dimen name="app_list_item_text_size">15sp</dimen>   <!--  列表内容项文字大小  -->
+    <dimen name="app_list_padding_left">30dp</dimen>   <!--  列表左边距  -->
+    <dimen name="app_button_border">1dp</dimen>  <!--  按钮边框宽度  -->
+    <dimen name="app_topbar_height">48dp</dimen>    <!--  标题栏默认高度  -->
+    <dimen name="app_tab_height">45dp</dimen>   <!--  选项卡默认高度  -->
+
+    <dimen name="keyboard_divider">0.5dp</dimen>
+    <dimen name="keyboard_key_height">50dp</dimen>
+</resources>

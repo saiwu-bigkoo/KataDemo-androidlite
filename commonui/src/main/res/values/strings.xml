@@ -1,0 +1,14 @@
+<resources>
+    <string name="loading">加载中</string>
+    <string name="countdown_s">%1ss</string>
+    <string name="resendcode">重新发送</string>
+    <string name="wechat">微信</string>
+    <string name="wechatmoments">朋友圈</string>
+    <string name="qqfriend">QQ好友</string>
+    <string name="sinaweibo">微博</string>
+    <string name="sharedialog_cancel">取消</string>
+    <string name="collect">收藏</string>
+    <string name="report">举报</string>
+    <string name="copylink">复制链接</string>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_topbar_item">19dp</dimen>
+    <dimen name="topbar_title_size">20sp</dimen>
+    <dimen name="size_topbar_righttext">15sp</dimen>
+    <dimen name="height_topbar_divider">0.5dp</dimen>
+</resources>

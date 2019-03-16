@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <com.bigkoo.commonui.topbar.TopBarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_topbar_height"
+        app:colorMode="Dark"
+        app:showDivider="false"
+        app:titleBackground="@color/app_frontground"
+        app:titleText="@string/charts_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/loTab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_tab_height"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvWeek"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onChangeFragment"
+                android:text="@string/charts_tab_week" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/app_divider" />
+
+            <TextView
+                android:id="@+id/tvMonth"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onChangeFragment"
+                android:text="@string/charts_tab_month" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/app_divider" />
+
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onChangeFragment"
+                android:text="@string/charts_tab_year" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_divider"
+            android:layout_below="@id/loTab"
+            android:background="@color/app_divider" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/loContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
